@@ -30,18 +30,18 @@ import requests
 import zipfile
 from pathlib import Path
 
-from model.params import *
+from important.model.params import *
 
-from model.BigGAN_layers import *
-from model.BigGAN_networks import *
-from model.Discriminator import *
-from model.dataset import *
-from model.generator import *
-from model.transformer import *
-from model.OCR_network import *
-from model.blocks import *
-from model.networks import *
-from model.util import *
+from important.model.BigGAN_layers import *
+from important.model.BigGAN_networks import *
+from important.model.Discriminator import *
+from important.model.dataset import *
+from important.model.generator import *
+from important.model.transformer import *
+from important.model.OCR_network import *
+from important.model.blocks import *
+from important.model.networks import *
+from important.model.util import *
 
 DEVICE= torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
