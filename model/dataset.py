@@ -30,7 +30,7 @@ def club_transforms(grayscale=False,convert=True):
   return transforms.Compose(transform_list)
 
 class TextDataset():
-  def __init__(self, base_path = '/content/IAM-32.pickle',  num_examples = 15, target_transform=None):
+  def __init__(self, base_path = '/kaggle/working/files/IAM-32.pickle',  num_examples = 15, target_transform=None):
 
         #IN THE ABOVE FUNCTION THE PARAMETERS ARE SUBJECT TO CHANGE ACCORDING TO THE CODE
         self.NUM_EXAMPLES = num_examples #THIS IS THE NUMBER OF EXAMPLES PER AUTHOR??
