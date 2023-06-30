@@ -15,7 +15,7 @@ import torchvision
 import requests
 import zipfile
 from pathlib import Path
-from model.params import *
+from important.model.params import *
 
 def club_transforms(grayscale=False,convert=True):
   transform_list=[]
