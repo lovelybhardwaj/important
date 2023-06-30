@@ -1,4 +1,4 @@
-import torch
+.import torch
 from torch import nn
 import numpy as np
 import pandas as pd
@@ -15,7 +15,7 @@ import torchvision
 import requests
 import zipfile
 from pathlib import Path
-from params import *
+from model.params import *
 
 def club_transforms(grayscale=False,convert=True):
   transform_list=[]
