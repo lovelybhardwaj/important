@@ -2,11 +2,11 @@ import torch
 import pandas as pd
 import torch.nn as nn
 import torchvision.models as models
-from transformer import *
-from blocks import LinearBlock, Conv2dBlock, ResBlocks, ActFirstResBlock
-from params import *
-from OCR_network import *
-from dataset import *
+from model.transformer import *
+from model.blocks import LinearBlock, Conv2dBlock, ResBlocks, ActFirstResBlock
+from model.params import *
+from model.OCR_network import *
+from model.dataset import *
 
 class FCNDecoder(nn.Module):
     def __init__(self, ups=3, n_res=2, dim=512, out_dim=1, res_norm='adain', activ='relu', pad_type='reflect'):
