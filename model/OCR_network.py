@@ -1,10 +1,10 @@
 import torch.nn as nn
-from model.util import *
+from important.model.util import *
 from torch.nn import init
 import os
 import torch
-from model.networks import *
-from model.params import *
+from important.model.networks import *
+from important.model.params import *
 
 class BidirectionalLSTM(nn.Module):
 
