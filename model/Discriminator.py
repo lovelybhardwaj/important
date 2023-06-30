@@ -13,12 +13,12 @@ from torch.nn import init
 import torch.optim as optim
 import torch.nn.functional as F
 from torch.nn import Parameter as P
-from model.transformer import Transformer 
-import model.BigGAN_layers as layers
-from model.batchnorm import SynchronizedBatchNorm2d as SyncBatchNorm2d
-from model.util import to_device, load_network
-from model.networks import init_weights
-from model.params import *
+from important.model.transformer import Transformer 
+import important.model.BigGAN_layers as layers
+from important.model.batchnorm import SynchronizedBatchNorm2d as SyncBatchNorm2d
+from important.model.util import to_device, load_network
+from important.model.networks import init_weights
+from important.model.params import *
 
 
 # In[2]:
