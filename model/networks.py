@@ -3,7 +3,7 @@ import torch.nn as nn
 from torch.nn import init
 import functools
 from torch.optim import lr_scheduler
-from model.util import *
+from important.model.util import *
 
 ###############################################################################
 # Helper Functions
