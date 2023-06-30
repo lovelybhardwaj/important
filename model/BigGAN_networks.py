@@ -11,16 +11,16 @@ from torch.nn import init
 import torch.optim as optim
 import torch.nn.functional as F
 from torch.nn import Parameter as P
-from transformer import Transformer 
-import BigGAN_layers  as layers
-from  batchnorm import SynchronizedBatchNorm2d as SyncBatchNorm2d
-from util import to_device, load_network
-from networks import init_weights
-from params import *
+from model.transformer import Transformer 
+import model.BigGAN_layers  as layers
+from  model.batchnorm import SynchronizedBatchNorm2d as SyncBatchNorm2d
+from model.util import to_device, load_network
+from model.networks import init_weights
+from model.params import *
 # Attention is passed in in the format '32_64' to mean applying an attention
 # block at both resolution 32x32 and 64x64. Just '64' will apply at 64x64.
 
-from blocks import LinearBlock, Conv2dBlock, ResBlocks, ActFirstResBlock
+from model.blocks import LinearBlock, Conv2dBlock, ResBlocks, ActFirstResBlock
 
 class Decoder(nn.Module):
     def __init__(self, ups=3, n_res=2, dim=512, out_dim=1, res_norm='adain', activ='relu', pad_type='reflect'):
