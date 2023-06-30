@@ -9,7 +9,7 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.nn import Parameter as P
 
-from batchnorm import SynchronizedBatchNorm2d as SyncBN2d
+from important.model.batchnorm import SynchronizedBatchNorm2d as SyncBN2d
 
 # Projection of x onto y
 def proj(x, y):
