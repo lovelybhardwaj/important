@@ -42,7 +42,7 @@ from important.model.OCR_network import *
 from important.model.blocks import *
 from important.model.networks import *
 from important.model.util import *
-ENGLISH_WORDS_PATH='model.english_words'
+ENGLISH_WORDS_PATH='/kaggle/working/files/english_words.txt'
 DEVICE= torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class SLRGAN(nn.Module):
