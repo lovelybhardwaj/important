@@ -141,7 +141,7 @@ class TextCollator(object):
 ##FOR VALIDATION DATA
 class TextDatasetval():
 
-    def __init__(self, base_path = '/content/IAM-32.pickle', num_examples = 15, target_transform=None):
+    def __init__(self, base_path = '/kaggle/working/files/IAM-32.pickle', num_examples = 15, target_transform=None):
 
         self.NUM_EXAMPLES = num_examples
         #base_path = DATASET_PATHS
