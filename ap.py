@@ -2,7 +2,7 @@
 from new import *
 import streamlit as st
 import torch
-import cv2
+
 from PIL import Image
 import os
 import time
