@@ -41,7 +41,7 @@ def generate_images( image, text_query):
     
     # Load the saved model
     model = SLRGAN()
-    model.netG.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
     
     print(model_path + ': Model loaded Successfully')
 
